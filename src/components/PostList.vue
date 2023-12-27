@@ -1,10 +1,9 @@
 <template>
   <div v-if="posts.length>0">
-    <h3>Комментарии</h3>
     <post-item v-for ="post in posts" :post="post" :key="post.id" @remove="$emit('remove', post)" />
   </div>
   <h3 v-else style="color: red; margin-top: 20px;">
-    Список комментарий пуст
+    Список отзывов пуст
   </h3>
 </template>
 

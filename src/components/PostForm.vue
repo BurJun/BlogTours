@@ -1,8 +1,8 @@
 
 <template>
   <from @submit.prevent>
-      <h3>Создание комментария</h3>
-      <input v-model="post.title" class="input" type = "text" placeholder="Название поста">
+      <h3>Создание отзыва</h3>
+      <input v-model="post.title" class="input" type = "text" placeholder="Имя">
       <input v-model="post.body" class="input" type = "text" placeholder="Описание поста">
       <my-button @click="createPost" style="margin-top: 15px;">Создать пост</my-button>
     </from>

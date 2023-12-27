@@ -9,23 +9,32 @@
         </div>
       </div>
   </div>
+  
+  <TourInfo></TourInfo>
   <TainsPrirod></TainsPrirod>
-  <info></info>
+  <SightseeingBlock></SightseeingBlock>
+  <Info></Info>
+  <Start></Start>
   <div class="app">
-    <h3 style="margin-top: 20px;">Блок с комментариями</h3>  
-    <my-button @click="showDialod" style="margin-top: 20px;">Создать комментарий</my-button>
+    <h3 style="margin-top: 20px; font-size: 40px;">Отзывы туристов</h3>  
+    <my-button @click="showDialod" style="margin-top: 20px;">Создать отзыв</my-button>
       <my-dialog v-model:show="dialogVisibole" >
         <post-form @create="createPost"/>
       </my-dialog>
       
       <post-list v-bind:posts="posts" @remove="removePost"/>
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
 import Menu from "@/components/Menu.vue";
+import Start from "@/components/Start.vue";
 import Info from "@/components/Info.vue";
+import SightseeingBlock from "@/components/Uvidim.vue";
+import TourInfo from "@/components/InfoTur.vue";
 import TainsPrirod from "@/components/TainsPrirod.vue";
+import Footer from "@/components/Footer.vue";
 import MyButton from "@/components/UI/MyButton.vue";
 import MyDialog from "./components/UI/MyDialog.vue";
 import PostForm from "@/components/PostForm.vue";
@@ -33,7 +42,7 @@ import PostList from "@/components/PostList.vue";
 export default {
   name: 'App',
   components:{
-    PostList, PostForm,MyDialog,MyButton,Menu,Info,TainsPrirod,
+    PostList, PostForm,MyDialog,MyButton,Menu,Info,TainsPrirod,Start,TourInfo,SightseeingBlock,Footer,
   },
   data(){
     return {

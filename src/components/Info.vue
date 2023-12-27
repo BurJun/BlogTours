@@ -29,7 +29,7 @@ export default{
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 900;
   margin-bottom: 20px;
   margin-top: 80px;
@@ -42,7 +42,8 @@ h2 {
 }
 
 .info-block {
-  width: 30%; /* Задайте ширину блока по вашему усмотрению */
+  width: 30%; 
+  background-color: #27ae60;/* Задайте ширину блока по вашему усмотрению */
 }
 
 .info-block img {
@@ -54,6 +55,6 @@ h2 {
 
 .info-block p {
   font-size: 16px;
-  color: #555;
+  color: white;
 }
 </style>

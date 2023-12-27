@@ -4,14 +4,19 @@
     <h1 class="name-sait">CozyJoy</h1>
     <div class="but_m">
       <button class="tours-menu" @click="navigate('home')">Главная</button>
-      <button сд @click="navigate('contacts')">Контакты</button>
+      <button  @click="navigate('contacts')">Контакты</button>
+      <my-button>Записаться</my-button>
     </div>
     
   </div>
 </template>
 
 <script>
+import MyButton from "@/components/UI/MyButton.vue";
 export default {
+  components:{
+    MyButton,
+  },
   methods: {
     navigate(view) {
       this.$emit('navigate', view);
